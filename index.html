@@ -479,6 +479,7 @@
       <!-- #endregion Portfolio -->
     </main>
 
+    <!-- #region footer -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-text">
@@ -544,12 +545,12 @@
         <div class="footer-form">
           <p class="footer-header">Subscribe</p>
           <form class="footer-form-email">
-            <label>
-              <input type="email" name="email" placeholder="E-mail" />
+            <label class="footer-form-label">
+              <input class="footer-input" type="email" name="email" placeholder="E-mail" />
             </label>
             <button class="footer-btn" type="submit">
               Subscribe
-              <svg class="icon" width="24" height="24">
+              <svg class="icon-footer-form" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -557,6 +558,7 @@
         </div>
       </div>
     </footer>
+    <!-- #endregion footer -->
 
     <div class="backdrop is-open">
       <div class="modal">
@@ -566,7 +568,7 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form>
+        <form class="form-wrapper">
           <div class="form-wrapper-cont">
             <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-cont-input">
@@ -584,6 +586,7 @@
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
             </div>
+            </div>
 
             <div class="form-wrapper-cont">
             <label class="modal-form-label" for="user-email">Email</label>
@@ -594,11 +597,12 @@
               </svg>
             </div>
           </div>
-<div class="form-wrapper-cont-comment">
-            <label class="modal-form-label-comment" for="user-comment">Comment</label>
 
+<div class="form-wrapper-cont-comment">
+<label class="modal-form-label-comment" for="user-comment">Comment</label>
 <textarea class="modal-textarea"  id="user-comment" placeholder="Text input"></textarea>
 </div>
+
 <div class="modal-con-checkbox">
   <input type="checkbox" id="user-checkbox" class="checkbox visually-hidden"  >
   <label for="user-checkbox" class="custom-label-user-checkbox">
@@ -610,9 +614,11 @@
     I accept the terms and conditions of the <a class="privacy-policy" href="#">Privacy Policy</a> 
   </label>
 </div>
+
 <button class="modal-submit" type="submit">Send</button>
-        </form>
+        
       </div>
+      </form>
     </div>
   </body>
 </html>
