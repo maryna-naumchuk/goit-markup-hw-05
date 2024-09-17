@@ -675,10 +675,6 @@ input {
     background: #fcfcfc;
 
     padding: 72px 24px 24px 24px;
-    /* padding-left: 21px;
-    padding-right: 27px;
-    padding-top: 40px;
-    padding-bottom: 8px; */
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -732,13 +728,7 @@ input {
     margin-top: 24px;
 }
 
-.form-wrapper-cont {
-    margin-bottom: 8px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center; */
-}
+.form-wrapper-cont {}
 
 .modal-form-label {
     font-weight: 400;
@@ -761,7 +751,10 @@ input {
     width: 100%;
     height: 40px;
     padding-left: 38px;
-    outline: none;
+    outline: transparent;
+    background-color: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
