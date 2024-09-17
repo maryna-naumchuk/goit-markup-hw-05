@@ -735,7 +735,12 @@ input {
     margin-top: 24px;
 }
 
-.form-wrapper-cont {}
+.form-wrapper-cont {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center; */
+}
 
 .modal-form-label {
     font-weight: 400;
@@ -828,7 +833,6 @@ input {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 8px;
 }
 
 .checkbox:checked+.custom-label-user-checkbox>.custom-checkbox {
@@ -842,6 +846,7 @@ input {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    margin-left: 8px;
 }
 
 .privacy-policy {
@@ -867,10 +872,11 @@ input {
     background: #4d5ae5;
     border: none;
     margin-top: 24px;
+    /* margin-left: 116px;
+    margin-right: 123px; */
 
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+
+
 }
 
 /* #endregion backdrop-modal */
